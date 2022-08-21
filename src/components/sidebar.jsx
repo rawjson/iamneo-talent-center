@@ -28,47 +28,50 @@ const BottomNavigation = [
   { Icon: GridIcon, fn: () => {} },
 ];
 
-const SideBar = () => {
+const SideBar = ({ children }) => {
   return (
-    <div className="bg-[#13334A] text-gray-900 fixed inset-y-0 z-20 w-16">
-      <div className="pt-4 overflow-y-auto h-screen">
-        <div className="mx-auto flex flex-col items-center relative h-full">
-          <ProfileIcon className="h-8 w-8 rounded-full text-cyan-900" />
-          <div className="border-t mt-4 w-full border-cyan-900" />
+    <>
+      <div className="bg-[#13334A] text-gray-900 fixed inset-y-0 z-20 w-16">
+        <div className="pt-4 overflow-y-auto h-screen">
+          <div className="mx-auto flex flex-col items-center relative h-full">
+            <ProfileIcon className="h-8 w-8 rounded-full text-cyan-900" />
+            <div className="border-t mt-4 w-full border-cyan-900" />
 
-          {/* top navigation */}
-          <nav>
-            <ul className="space-y-4 mt-5 text-white">
-              {TopNavigation.map((Nav, i) => (
-                <li key={i} className="relative">
-                  <SideNavButton onClick={Nav.fn}>
-                    <Nav.Icon className="h-6 w-6" />
-                  </SideNavButton>
-                  <span className="absolute -right-3 top-1/4">
-                    {Nav.expandable && (
-                      <DotsVerticalIcon className="w-4 h-5 cursor-pointer hover:text-purple-400" />
-                    )}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </nav>
+            {/* top navigation */}
+            <nav>
+              <ul className="space-y-4 mt-5 text-white">
+                {TopNavigation.map((Nav, i) => (
+                  <li key={i} className="relative">
+                    <SideNavButton onClick={Nav.fn}>
+                      <Nav.Icon className="h-6 w-6" />
+                    </SideNavButton>
+                    <span className="absolute -right-3 top-1/4">
+                      {Nav.expandable && (
+                        <DotsVerticalIcon className="w-4 h-5 cursor-pointer hover:text-purple-400" />
+                      )}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-          {/* bottom navigation */}
-          <nav className="absolute bottom-5">
-            <ul className="space-y-4 mt-5 text-white">
-              {BottomNavigation.map((Nav, i) => (
-                <li key={i}>
-                  <SideNavButton onClick={Nav.fn}>
-                    <Nav.Icon className="h-6 w-6" />
-                  </SideNavButton>
-                </li>
-              ))}
-            </ul>
-          </nav>
+            {/* bottom navigation */}
+            <nav className="absolute bottom-5">
+              <ul className="space-y-4 mt-5 text-white">
+                {BottomNavigation.map((Nav, i) => (
+                  <li key={i}>
+                    <SideNavButton onClick={Nav.fn}>
+                      <Nav.Icon className="h-6 w-6" />
+                    </SideNavButton>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
+      <main>{children}</main>
+    </>
   );
 };
 
