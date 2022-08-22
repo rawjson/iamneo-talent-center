@@ -17,7 +17,7 @@ const Candidate = (props) => {
               <h3 className="text-sm font-bold text-cyan-700">
                 {props.candidate.name}
               </h3>
-              <p className="text-sm text-gray-400 rounded font-bold">
+              <p className="text-sm text-gray-500 rounded font-bold">
                 {props.candidate.company}
               </p>
             </div>

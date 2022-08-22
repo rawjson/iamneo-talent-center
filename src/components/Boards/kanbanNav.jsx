@@ -11,12 +11,12 @@ const KanBanNav = () => {
       <div className="flex space-x-2 items-center">
         <span className="font-bold">All Candidates</span>
         <span>-</span>
-        <span className="text-gray-500">Active &#40;{len}&#41;</span>
+        <span className="text-gray-600">Active &#40;{len}&#41;</span>
         <ChevronRightIcon className="h-3 w-3 transform rotate-90" />
       </div>
 
       <div className="flex items-center space-x-2">
-        <span className="text-gray-500">Sort by</span>
+        <span className="text-gray-600">Sort by</span>
         <span className="font-bold">Last Updated</span>
         <ChevronRightIcon className="h-3 w-3 transform rotate-90" />
       </div>
