@@ -75,7 +75,7 @@ const SideBar = ({ children }) => {
           </div>
         </div>
       </div>
-      <main>{children}</main>
+      <main className="w-full min-w-max">{children}</main>
     </>
   );
 };
