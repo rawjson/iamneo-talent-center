@@ -17,7 +17,7 @@ import { DotsVerticalIcon } from './icons-sidebar/dotsVerticalIcon';
 
 const TopNavigation = [
   { Icon: InboxIcon, fn: () => {} },
-  { Icon: BriefCaseIcon, fn: () => {}, expandable: true },
+  { Icon: BriefCaseIcon, fn: () => {}, expandable: true, active: true },
   { Icon: UsersIcon, fn: () => {}, expandable: true },
   { Icon: CogIcon, fn: () => {} },
 ];
@@ -42,7 +42,10 @@ const SideBar = ({ children }) => {
               <ul className="space-y-4 mt-5 text-white">
                 {TopNavigation.map((Nav, i) => (
                   <li key={i} className="relative">
-                    <SideNavButton onClick={Nav.fn}>
+                    <SideNavButton
+                      onClick={Nav.fn}
+                      active={Nav.active ?? false}
+                    >
                       <Nav.Icon className="h-6 w-6" />
                     </SideNavButton>
                     <span className="absolute -right-3 top-1/4">
