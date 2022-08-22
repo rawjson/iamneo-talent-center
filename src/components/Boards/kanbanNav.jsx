@@ -7,7 +7,7 @@ const KanBanNav = () => {
   const len = Object.keys(initialData['candidates']).length;
 
   return (
-    <nav className="flex items-center text-sm my-5 justify-between">
+    <nav className="flex flex-shrink-0 items-center text-sm my-5 justify-between">
       <div className="flex space-x-2 items-center">
         <span className="font-bold">All Candidates</span>
         <span>-</span>
