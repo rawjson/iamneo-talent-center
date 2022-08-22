@@ -1,11 +1,11 @@
 import { ProfileIcon } from './icons-sidebar/profile';
-import { SearchIcon } from './icons-dashboard/searchIcon';
 import { PlusIcon } from './icons-dashboard/plusIcon';
 import { GiftIcon } from './icons-dashboard/giftIcon';
+import SearchCard from './searchCard';
 
 const TopBar = () => {
   return (
-    <div className="h-16 sticky top-0 z-10 flex-shrink-0 flex items-center justify-between bg-white border-b w-full min-w-max px-6">
+    <div className="h-16 sticky top-0 z-10 flex-shrink-0 flex items-center justify-between bg-white border-b px-6">
       {/* left side */}
       <div className="flex space-x-4 items-center">
         <ProfileIcon className="h-10 w-10 text-violet-600" />
@@ -16,14 +16,7 @@ const TopBar = () => {
 
       {/* right side */}
       <div className="flex space-x-4 items-center">
-        <div className="flex items-center border-b p-1 space-x-2 focus-within:ring-violet-500 focus-within:ring-2 ring-offset-1 rounded transition-all">
-          <SearchIcon className="h-4 w-4" />
-          <input
-            type="text"
-            placeholder="Search"
-            className="text-sm outline-none"
-          />
-        </div>
+        <SearchCard />
 
         {/* menu and profile buttons */}
         <div className="flex items-center space-x-4">
