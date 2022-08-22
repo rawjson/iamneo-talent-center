@@ -60,18 +60,30 @@ export const initialData = {
       company: 'BM Technovations',
       rating: 0,
     },
+    'cand-11': {
+      id: 'cand-11',
+      name: 'Hemachandru K',
+      company: 'Paypal Client',
+      rating: 0,
+    },
+    'cand-12': {
+      id: 'cand-12',
+      name: 'Jithin Sajay',
+      company: 'Unknown',
+      rating: 0,
+    },
   },
   columns: {
     'column-1': {
       id: 'column-1',
       title: 'Open',
-      candIds: ['cand-1', 'cand-2'],
+      candIds: ['cand-1', 'cand-2', 'cand-11'],
       theme: 'gray',
     },
     'column-2': {
       id: 'column-2',
       title: 'Contacted',
-      candIds: ['cand-3', 'cand-4'],
+      candIds: ['cand-3', 'cand-4', 'cand-12'],
       theme: 'yellow',
     },
     'column-3': {
