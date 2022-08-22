@@ -2,6 +2,14 @@
 
 A drag and drop UI friendly Kanban board for managing the overall process.
 
+To get started, clone this repository and run the installer.
+
+Install dependencies:
+
+```
+$ npm install  // use --force flag if there is any issue
+```
+
 ## Tools used:
 
 - React - JS Library
