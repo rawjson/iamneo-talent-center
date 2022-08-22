@@ -1,5 +1,6 @@
 import { BriefCaseIcon } from '../components/icons-sidebar/briefCaseIcon';
-import { GlobeIcon } from '../components/icons-dashboard/globeIcon';
+import KanbanBoards from '../components/kanbanBoards';
+import KanBanNav from '../components/Boards/kanbanNav';
 
 const JobsBoard = () => {
   return (
@@ -38,6 +39,13 @@ const JobsBoard = () => {
               Published
             </option>
           </select>
+        </div>
+      </div>
+
+      <div className="px-6 py-2 h-full">
+        <KanBanNav />
+        <div className="flex space-x-10">
+          <KanbanBoards />
         </div>
       </div>
     </>

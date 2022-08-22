@@ -9,9 +9,9 @@ const TopBar = () => {
       {/* left side */}
       <div className="flex space-x-4 items-center">
         <ProfileIcon className="h-10 w-10 text-violet-600" />
-        <span className="text-lg font-bold text-[#13334A]">
+        <h1 className="text-lg font-bold text-[#13334A]">
           iamneo.ai Talent Center
-        </span>
+        </h1>
       </div>
 
       {/* right side */}
