@@ -1,11 +1,11 @@
-import { initialData } from './Boards/initData';
-import { useState } from 'react';
+import { useContext } from 'react';
 import Column from './Boards/column';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { onDragEnd } from './onDragEnd';
+import { DataContext } from './dataContext/dataContext';
 
 const KanbanBoards = () => {
-  const [data, setData] = useState(initialData);
+  const { data, setData } = useContext(DataContext);
 
   return (
     <DragDropContext
