@@ -1,7 +1,7 @@
 const Readme = () => {
   return (
     <>
-      <div className="h-screen bg-white w-full shadow-lg px-8 py-10 space-y-4 text-sm overflow-y-auto inset-y-0">
+      <div className="bg-white hidden 2xl:block shadow-lg px-8 py-5 space-y-4 text-sm overflow-auto inset-y-0 h-screen overflow-y-auto border-l fixed">
         <h2 className="text-base font-bold text-cyan-900 border-b">
           A Replica of a Recruitment tool built for managing 1000+ candidate
           applications.
