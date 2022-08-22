@@ -5,7 +5,7 @@ import KanBanNav from '../components/Boards/kanbanNav';
 const JobsBoard = () => {
   return (
     <>
-      <div className="w-full h-16 px-6 flex items-center justify-between bg-zinc-100">
+      <div className="h-16 px-8 flex items-center justify-between bg-zinc-100">
         {/* left side */}
         <div className="flex space-x-2 items-center text-sm font-bold text-cyan-900">
           <BriefCaseIcon className="h-4 w-4" />
@@ -42,7 +42,7 @@ const JobsBoard = () => {
         </div>
       </div>
 
-      <div className="px-6 py-2 h-full">
+      <div className="px-8 py-2 w-full">
         <KanBanNav />
         <div className="flex space-x-10">
           <KanbanBoards />
