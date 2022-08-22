@@ -46,6 +46,7 @@ const SideBar = ({ children }) => {
                       onClick={Nav.fn}
                       active={Nav.active ?? false}
                     >
+                      <span className="sr-only">{Nav.Icon.name}</span>
                       <Nav.Icon className="h-6 w-6" />
                     </SideNavButton>
                     <span className="absolute -right-3 top-1/4">
@@ -64,6 +65,7 @@ const SideBar = ({ children }) => {
                 {BottomNavigation.map((Nav, i) => (
                   <li key={i}>
                     <SideNavButton onClick={Nav.fn}>
+                      <span className="sr-only">{Nav.Icon.name}</span>
                       <Nav.Icon className="h-6 w-6" />
                     </SideNavButton>
                   </li>
