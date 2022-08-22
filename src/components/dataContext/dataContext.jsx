@@ -7,14 +7,11 @@ const { Provider } = DataContext;
 const DataProvider = ({ children }) => {
   const [data, setData] = useState(initialData);
 
-  const reset = () => setData(initialData);
-
   return (
     <Provider
       value={{
         data,
         setData: (data) => setData(data),
-        reset: () => reset(),
       }}
     >
       {children}
