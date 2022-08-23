@@ -38,7 +38,10 @@ const Readme = () => {
         <p>
           Link to the source code is available with:
           <br />
-          <a href="" className="font-bold underline">
+          <a
+            href="https://github.com/rawjson/iamneo-talent-center"
+            className="font-bold underline"
+          >
             GitHub Repository
           </a>
         </p>
