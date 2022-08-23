@@ -20,7 +20,7 @@ const Readme = () => {
         </ul>
 
         <p>
-          The icons used in this replica are take from{' '}
+          The icons used in this replica are taken from{' '}
           <a href="https://heroicons.com" className="underline font-bold">
             heroicons.com
           </a>
