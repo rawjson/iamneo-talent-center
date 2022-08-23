@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from '../icons-dashboard/chevronRightIcon';
-import { initialData } from './initData';
+import { initialData } from '../initData';
 import { FlaskIcon } from '../icons-dashboard/flaskIcon';
 import { UploadIcon } from '../icons-dashboard/uploadIcon';
 import { ViewListIcon } from '../icons-dashboard/viewListIcon';

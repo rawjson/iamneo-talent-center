@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import { initialData } from '../Boards/initData';
+import { initialData } from '../initData';
 
 const DataContext = createContext();
 const { Provider } = DataContext;

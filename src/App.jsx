@@ -1,8 +1,8 @@
 import SideBar from './components/sidebar';
-import TopBar from './components/topBar';
+import TopBar from './components/topBar/topBar';
 import JobsBoard from './pages/jobsBoard';
 import Readme from './components/readme';
-import { DataProvider } from './components/dataContext/dataContext';
+import { DataProvider } from './components/dataContext/index';
 import { ChevronRightIcon } from './components/icons-dashboard/chevronRightIcon';
 import { useState } from 'react';
 

@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
-import { SearchIcon } from './icons-dashboard/searchIcon';
-import { DataContext } from './dataContext/dataContext';
+import { SearchIcon } from '../icons-dashboard/searchIcon';
+import { DataContext } from '../dataContext/index';
 
 const SearchCard = () => {
   const [search, setSearch] = useState('');

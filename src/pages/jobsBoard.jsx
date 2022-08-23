@@ -1,6 +1,6 @@
 import { BriefCaseIcon } from '../components/icons-sidebar/briefCaseIcon';
-import KanbanBoards from '../components/kanbanBoards';
-import KanBanNav from '../components/Boards/kanbanNav';
+import KanbanBoards from '../components/boards/kanbanBoards';
+import KanBanNav from '../components/boards/kanbanNav';
 
 const JobsBoard = () => {
   return (

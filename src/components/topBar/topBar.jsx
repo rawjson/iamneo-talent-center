@@ -1,6 +1,6 @@
-import { ProfileIcon } from './icons-sidebar/profile';
-import { PlusIcon } from './icons-dashboard/plusIcon';
-import { GiftIcon } from './icons-dashboard/giftIcon';
+import { ProfileIcon } from '../icons-sidebar/profile';
+import { PlusIcon } from '../icons-dashboard/plusIcon';
+import { GiftIcon } from '../icons-dashboard/giftIcon';
 import SearchCard from './searchCard';
 
 const TopBar = () => {
