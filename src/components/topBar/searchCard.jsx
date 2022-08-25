@@ -12,7 +12,7 @@ const SearchCard = () => {
     const candidates = Object.entries(data['candidates']);
     let found = {};
 
-    for (let i = 0; i < candidates.length; i++) {
+    for (let i in candidates) {
       const str = candidates[i][1].name.trim().slice(0, 4).toLowerCase();
       if (searchStr.match(str)) {
         const id = candidates[i][0];
@@ -34,14 +34,20 @@ const SearchCard = () => {
       let l = 0;
       let r = columns.length - 1;
 
-      for (let i = 0; i < candidate.length; i++) {
+      // the code below is just to remove extra candidate ids from the columns
+      // the time complexity may increase and not really helpful, however,
+      // without implementing this slicing function the app would
+      // break when searching. I am currently figuring out a better sorting
+      // and searching alg
+
+      for (let i in candidate) {
         while (l <= r) {
-          for (let j = 0; j < columns[l][1].candIds.length; j++) {
+          for (let j in columns[l][1].candIds) {
             if (columns[l][1].candIds[j] === candidate[i][0]) {
               const id = columns[l][0];
               let cdata = columns[l][1];
 
-              for (let x = 0; x < cdata.candIds.length; x++) {
+              for (let x in cdata.candIds) {
                 if (cdata.candIds[x] === candidate[i][0]) {
                   let id = [cdata.candIds[x]];
                   cdata = {
@@ -58,7 +64,8 @@ const SearchCard = () => {
       }
 
       const columnOrder = Object.keys(newColumns).map((key) => key);
-      const newData = {
+
+      setData({
         columns: {
           ...newColumns,
         },
@@ -66,9 +73,7 @@ const SearchCard = () => {
           ...found,
         },
         columnOrder,
-      };
-
-      setData(newData);
+      });
     }
   };
 
@@ -84,6 +89,7 @@ const SearchCard = () => {
       <div className="flex items-center border-b p-1 space-x-2 focus-within:ring-violet-500 focus-within:ring-2 ring-offset-1 rounded transition-all">
         <SearchIcon className="h-4 w-4" />
         <input
+          autoFocus
           type="text"
           placeholder="Search"
           className="text-sm outline-none"
