@@ -17,7 +17,7 @@ $ npm install  // use --force flag if there is any issue
 - React Beautiflul DND
 - TailwindCSS
 
-The icons used in this replica are take from heroicons.com, hence, I apologize for the slight difference in the appearance.
+The icons used in this replica are taken from heroicons.com, hence, I apologize for the slight difference in the appearance.
 
 TailwindCSS and Vite.js is used for faster developmnent.
 
