@@ -23,7 +23,7 @@ const Column = (props) => {
         {/* column type */}
         <div
           className={filterClasses(
-            applyBorder(theme),
+            applyBorder(),
             'bg-white h-10 flex items-center rounded border-l-4'
           )}
         >
